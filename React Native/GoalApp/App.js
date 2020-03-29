@@ -6,10 +6,13 @@ export default function App() {
     <View>
       <View>
         <TextInpu/>
-        <Button title="ADD"/>
+        <Button title="AddGoal"/>
       </View> 
+      
       <View>  
+     
       </View> 
+     
      </View>
   );
 }
