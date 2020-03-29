@@ -1,7 +1,6 @@
 import React, { useState} from "react";
 import { StyleSheet, Text, View, TextInput, Button, FlatList} from 'react-native';
-
-
+import Show from './component/show/show';
 export default function App() {
 const [enteredGoal, setEnteredGoal] = useState('');
 const [myGoal, setMyGoals] = useState([]);
@@ -30,13 +29,9 @@ const addGoalHandler = () => {
       <FlatList
       keyExtractor={(item,index) => item.id}
       data={myGoal} 
-      renderItem={itemData => (
-            <View style={styles.listItem}>   
-            <Text> {itemData.item.val}</Text>
-            </View> 
-      )}
+      renderItem={itemData => (<Show title={itemData.item.val}/>)}
       />
-            </View> 
+      </View> 
        
     );
 }
