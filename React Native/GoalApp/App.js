@@ -7,12 +7,15 @@ export default function App() {
   const [enterGoal, setEnterGoal] = useState=('')
 
   const goalInputHandler = (enteredText) =>
-  setEnterGoal(enteredText)
+  setEnterGoal(enteredText);
+
+  const addGoalHandler = () => {Console.log(enterGoal)};
+
   return (
     <View style={styles.screen}>
       <View style={styles.inputClass}>
         <TextInput placeholder="Goal" style={styles.input} onChangeText={goalInputHandler} value={enterGoal}/>
-        <Button title="Add Goal"/>
+        <Button title="Add Goal" onPress={addGoalHandler}/>
       </View> 
       
       <View>  
