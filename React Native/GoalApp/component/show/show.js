@@ -11,14 +11,16 @@ const Show = props => {
 };
 
 const styles = StyleSheet.create({
-    listItem:{
-      padding: 10,
-      marginVertical: 10,
-      backgroundColor:'#ccc',
-      borderColor:'blck',
-      borderWidth: 1,
-    },
-  });
+  listItem:{
+    width: '70%',
+    height: '50%',
+
+    padding: 10,
+    marginVertical: 10,
+    backgroundColor:'white',
+    borderColor:'blck',
+    borderWidth: 1,
+  },  });
   
   
   
