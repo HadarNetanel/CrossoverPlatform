@@ -19,7 +19,7 @@ const Input = props => {
         style={styles.input} 
         onChangeText={goalInputHandler} 
         value={enteredGoal}/>
-        <Button title="Add Goal" onPress={props.onAdd.bind(this, enteredGoal)}/>
+        <Button title="Add Goal" onPress={props.onAdd.bind(this,enteredGoal)}/>
       </View> 
     );
 };
@@ -27,18 +27,22 @@ const Input = props => {
 const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '70%',
+    width: '100%',
+    justifyContent: 'space-around',
+    alignItems:'center',
 
   },
   input:{
-    width: '80%',
+    width: '70%',
     borderColor: 'black',
     borderWidth: 1,
     padding: 10,
-backgroundColor:"white"
+    marginTop:10,
+backgroundColor:'transparent',
+justifyContent: 'center',
+
   },
+
 
   });
   

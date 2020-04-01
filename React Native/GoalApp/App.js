@@ -5,7 +5,7 @@ import Input from './component/input/Input';
 
 export default function App() {
 const [myGoal, setMyGoals] = useState([]);
-const image = { uri: "https://leannecalderwood.com/wp-content/uploads/2017/11/goal-setting.jpg" };
+const image = { uri: "http://sf.co.ua/14/02/wallpaper-427553.jpg" };
 
 const addGoalHandler = goalTitle => {
   setMyGoals(currentGoals => [
@@ -29,19 +29,21 @@ const addGoalHandler = goalTitle => {
        
     );
 }
+const resizeMode = 'center';
 
 const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: '100%',
 
-    display:'flex',
-
   },
   image: {
     flex: 1,
-    resizeMode: 'cover',
-    justifyContent: "center",
+    resizeMode,
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
 
   },
 
